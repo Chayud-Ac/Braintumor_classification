@@ -1,0 +1,23 @@
+# Ignore data directory
+Data/
+
+
+# Ignore archive file
+archive (1).zip
+
+# Ignore any other unnecessary or temporary files
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+*.env
+.envrc
+venv/
+.venv/
+env/
+build/
+dist/
+*.egg-info/
