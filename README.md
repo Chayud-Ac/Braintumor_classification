@@ -23,6 +23,9 @@ You can install and work in wsl to allow tensorflow-gpu.
 ### Create and activate conda environment using environment.yml (This provided all library using in this project)
 
 ```bash
+
+mkdir Data # then import you trainingset , testingset in this directory
+
 conda env create -f environment.yml
 conda activate classification  # Double check the name in environment.yml
 
