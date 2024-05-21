@@ -20,7 +20,7 @@ Originally there are two seperate dataset training and testing. This project is 
 
 You can install and work in wsl to allow tensorflow-gpu.
 
-### 2. Create and activate conda environment using environment.yml (This provided all library using in this project)
+### Create and activate conda environment using environment.yml (This provided all library using in this project)
 
 ```bash
 conda env create -f environment.yml
@@ -35,3 +35,19 @@ conda activate classification  # Double check the name in environment.yml
 - Data_preprocessing_and_training - This focus of developing preprocess pipeline and training pipeline. Preprocessing will compose of normalize the image or rescaling the image in range of 0-1 as well as data augmentation to prevent model overfit and generate more diverse training set. For training pipeline we use multiple base model in this project including Inception V3 , Xception , InceptionResNetV2.
 
 - Model_evaluation - evaluate the model base on testing set using matrix like accuracy , loss , f1 score , confusion matrix.
+
+## Summary
+
+Model xception
+Test Loss: 0.1648
+Test Accuracy: 0.9542
+F1 Score: 0.9541
+
+Model InceptionV3
+Test Loss: 0.1226
+Test Accuracy: 0.9611
+F1 Score: 0.9610
+
+## future scope
+
+fine tuning the model with different type of data augmentation or different value of hyperparameter. The save model can be futher use to generate heatmap to identify the region of the image that influence on the model prediction.
